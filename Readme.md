@@ -1,4 +1,6 @@
 
+## API Documentation
+
 1. This application provides endpoints for visualizing mood and activity trends, user profile insights, and AI-based recommendations.  
 2. The root endpoint serves an interactive dashboard in HTML format.  
 3. Users can view mood distribution, activity time, and mood patterns for specific profiles.  
@@ -40,4 +42,12 @@
 
 9. **Content Types**: Primarily JSON responses, except for the dashboard, which returns HTML.  
 
-10. **Error Handling**: Ensures HTTP 422 for validation issues and HTTP 500 for server errors.  
+10. **Error Handling**: Ensures HTTP 422 for validation issues and HTTP 500 for server errors.
+
+Home page
+
+![alt text](image-1.png)
+
+Fast API Docs Page
+
+![alt text](image.png)
