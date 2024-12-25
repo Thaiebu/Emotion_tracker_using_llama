@@ -46,7 +46,7 @@
 
 Home page
 
-![alt text](backend/image-1.png)
+![alt text](image.png)
 
 Fast API Docs Page
 
