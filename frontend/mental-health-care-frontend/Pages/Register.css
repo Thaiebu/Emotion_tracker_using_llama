@@ -1,0 +1,76 @@
+.register-container {
+  background-color: #f8f9fa;
+  padding: 0;
+  font-size: 13px;
+}
+
+.register-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.register-banner-section {
+  background-color: #222222;
+  text-align: center;
+  color: #ffffff; /* White text color for better readability */
+}
+
+.discount-content h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-content h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-content p {
+  font-size: 1.25em;
+}
+
+.register-section {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.register-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+.register-box input,
+.register-box .register-btn {
+  margin-bottom: 1rem;
+  border-radius: 0%;
+}
+
+.register-box .register-btn,
+.register-box .register-btn:is(:hover, :active, :focus, :focus-visible) {
+  background-color: #222222 !important;
+}
+
+.register-box .register-btn:is(:disabled) {
+  color: #ffffff !important;
+}
+
+.register-box h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.social-icons a {
+  cursor: pointer;
+}
+
+#txtPassword.is-invalid + #toggleBtn {
+  right: 26px;
+}

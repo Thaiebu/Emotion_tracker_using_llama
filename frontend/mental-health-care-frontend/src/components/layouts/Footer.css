@@ -1,0 +1,81 @@
+/* General footer styles */
+.bd-footer {
+  background-color: #111;
+  color: #fff;
+}
+
+.bd-footer h5 {
+  color: #fff;
+}
+
+.bd-footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bd-footer ul li {
+  margin-bottom: 8px;
+}
+
+.bd-footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.bd-footer a:hover {
+  color: #fff;
+}
+
+.footer-section {
+  width: 45%; /* Adjust the width of each section */
+}
+
+.footer-divider {
+  margin: 0 10px;
+  color: #aaa;
+}
+
+.social-icons svg {
+  margin-right: 10px;
+  color: #aaa;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%; /* Stack sections vertically on smaller screens */
+  }
+
+  .social-icons svg {
+    margin-right: 5px;
+  }
+
+  .footer-divider {
+    margin: 0 5px;
+  }
+}
+
+.text-effect-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.5rem; 
+  color: #aaaaaa57; 
+  z-index: 1;
+  margin: -2px 0px 0px -10px;
+}
+
+.text-foreground {
+  position: relative;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  margin: 23px 0px 10px -5px;
+  letter-spacing: 1px;
+}

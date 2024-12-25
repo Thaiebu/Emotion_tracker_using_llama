@@ -1,0 +1,32 @@
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.form-control,
+.submit-btn {
+  margin-bottom: 1rem !important;
+  border-radius: 0% !important;
+}
+
+.submit-btn,
+.submit-btn:is(:hover, :active, :focus, :focus-visible) {
+  background-color: rgb(var(--color-black)) !important;
+}
+
+.invalid-message {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: var(--bs-form-invalid-color);
+}
+
+#txtPassword.is-invalid + #toggleBtn {
+  right: 26px;
+}

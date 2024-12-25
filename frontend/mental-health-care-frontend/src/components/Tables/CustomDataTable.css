@@ -1,0 +1,243 @@
+.p-datatable {
+  padding: 10px;
+  background-color: rgb(var(--color-primary));
+}
+
+.p-datatable-wrapper {
+  border: 1px 0 solid rgba(var(--color-black), 0.175);
+  padding: 0 10px;
+}
+
+.p-datatable-header {
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(var(--color-primary));
+}
+
+.p-datatable thead tr th {
+  background-color: rgb(var(--color-black)) !important;
+  color: rgb(var(--color-primary)) !important;
+  border: 1px solid rgba(var(--color-black), 0.175) !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: 1px;
+  padding: 10px;
+  width: fit-content !important;
+}
+
+.p-datatable thead tr th .p-column-header-content {
+  display: flex;
+  justify-content: center;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(var(--color-black), 0.175) !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: 1px;
+  background-color: rgb(var(--color-primary)) !important;
+}
+
+/* Target sort buttons */
+.p-sortable-column .p-sortable-column-icon {
+  color: rgb(var(--color-primary)); /* Set sort icon color to white */
+  margin: 0 10px; /* Add spacing around the icon */
+}
+
+.p-column-filter-menu-button,
+.p-column-filter-menu-button-open {
+  color: rgb(
+    var(--color-primary)
+  ) !important; /* Set sort icon color to white */
+  background-color: transparent !important; /* Set sort icon color to white */
+}
+
+.p-column-filter-menu-button:hover,
+.p-column-filter-menu-button-open:hover,
+.p-column-filter-menu-button:focus-visible {
+  color: rgb(
+    var(--color-primary)
+  ) !important; /* Set sort icon color to white */
+  background-color: transparent !important; /* Set sort icon color to white */
+}
+
+.p-column-filter-overlay {
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+.p-column-filter-operator,
+.p-column-filter-constraints,
+.p-column-filter-constraints .p-column-filter-constraint .p-component,
+.p-column-filter-add-rule {
+  margin-bottom: 0.5rem;
+}
+
+/* Target the Clear button */
+.p-column-filter-buttonbar .p-button:not(.p-button-icon-only):first-child {
+  background-color: rgb(
+    var(--color-primary)
+  ); /* Your desired background color */
+  color: rgb(var(--color-black)); /* Your desired text color */
+  border: 1px solid rgb(var(--color-black)); /* Your desired text color */
+  border-radius: 0;
+  padding: 0.5rem;
+}
+
+/* Target the Apply button */
+.p-column-filter-buttonbar .p-button:not(.p-button-icon-only):last-child {
+  background-color: rgb(var(--color-black));
+  color: rgb(var(--color-primary)); /* Your desired text color */
+  border: none; /* Remove border if desired */
+  border-radius: 0;
+  padding: 0.5rem;
+}
+
+.p-column-filter-add-button {
+  margin-bottom: 0.5rem;
+  background-color: rgb(
+    var(--color-primary)
+  ); /* Your desired background color */
+  color: rgb(var(--color-black));
+}
+
+/* Make paginator box background transparent */
+.p-datatable .p-paginator {
+  background-color: rgb(var(--color-primary));
+  padding: 10px 0px;
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+.p-datatable .p-paginator .p-paginator-element,
+.p-paginator-current,
+.p-datatable .p-paginator .p-dropdown {
+  height: 2rem;
+}
+
+.p-datatable .p-paginator .p-paginator-page,
+.p-datatable .p-paginator .p-paginator-next,
+.p-datatable .p-paginator .p-paginator-prev,
+.p-datatable .p-paginator .p-paginator-first,
+.p-paginator-current,
+.p-datatable .p-paginator .p-paginator-last {
+  background-color: transparent;
+  border: none;
+  margin: 0 3px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.p-datatable .p-paginator .p-paginator-page.p-highlight,
+/* .p-dropdown-items-wrapper .p-dropdown-items .p-highlight, */
+.p-datatable .p-paginator .p-paginator-page:hover,
+.p-datatable .p-paginator .p-paginator-next:hover,
+.p-datatable .p-paginator .p-paginator-prev:hover,
+.p-datatable .p-paginator .p-paginator-first:hover,
+.p-datatable .p-paginator .p-paginator-last:hover {
+  border: 1px solid !important;
+  border-color: rgb(var(--color-black)) !important;
+  color: rgb(var(--color-black)) !important;
+  font-weight: 700;
+  font-size: medium;
+  background-color: rgba(
+    var(--color-black) 0.2
+  ); /* Optional: add a slight background color change */
+}
+
+.p-dropdown:hover {
+  border: 1px solid !important;
+  border-color: rgb(var(--color-black)) !important;
+  color: rgb(var(--color-black)) !important;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.p-dropdown-items-wrapper .p-dropdown-items {
+  padding: 0;
+}
+
+.p-dropdown-items-wrapper .p-dropdown-items .p-highlight,
+.p-column-filter-add-button:active,
+.p-column-filter-add-button:focus {
+  color: rgb(var(--color-black)) !important;
+  font-weight: 700;
+  background-color: rgba(
+    var(--color-black),
+    0.2
+  ); /* Optional: add a slight background color change */
+}
+
+.p-inputtext:enabled:focus,
+.p-dropdown:not(.p-disabled).p-focus,
+.p-column-filter-add-button:active,
+.p-column-filter-add-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-black), 0.25) !important;
+  border-color: rgb(var(--color-black)) !important;
+}
+
+.p-dropdown-items-wrapper .p-dropdown-items .p-dropdown-item,
+.p-dropdown-label {
+  padding: 0 0 0 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.clear-filter-btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 0%;
+  align-items: center;
+  align-content: center;
+}
+
+.clear-filter-btn,
+.clear-filter-btn:hover,
+.clear-filter-btn:active,
+.clear-filter-btn:focus-visible {
+  color: rgb(var(--color-primary)) !important;
+  background-color: rgb(var(--color-black)) !important;
+  border-color: rgb(var(--color-black)) !important;
+}
+.add-btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 0%;
+  align-items: center;
+  align-content: center;
+}
+
+.add-btn,
+.add-btn:is(:hover, :active, :focus-visible) {
+  color: rgb(var(--color-black)) !important;
+  background-color: rgb(var(--color-primary)) !important;
+  border-color: rgb(var(--color-black)) !important;
+}
+
+.add-btn:is(:active, :focus-visible) {
+  box-shadow: 0 0 0 0.25rem rgb(var(--color-primary), 0.5) !important;
+}
+
+.global-search {
+  width: 250px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+
+  color: rgb(var(--color-black));
+  position: relative;
+}
+
+.global-search .form-control {
+  margin: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+  .global-search {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

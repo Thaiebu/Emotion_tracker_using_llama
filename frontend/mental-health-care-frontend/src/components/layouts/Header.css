@@ -1,0 +1,46 @@
+/* Main Navbar */
+.main-navbar {
+  background-color:white;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+}
+
+.main-navbar .nav-link {
+  color: #262626;
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.main-navbar .nav-link:hover {
+  color: #000;
+}
+
+.search-input {
+  width: 300px;
+  border-radius: 50px;
+  padding-left: 20px;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.search-button {
+  border-radius: 50px;
+  margin-left: -40px;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.search-button {
+  color: #000;
+}
+
+/* Icons Styling */
+.main-navbar .bi-heart,
+.main-navbar .bi-person-circle {
+  font-size: 1.25rem;
+  color: #262626;
+  margin-left: 15px;
+}
